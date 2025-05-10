@@ -33,7 +33,8 @@ server.get('/stream-live', async (req, res) => {
     const response = await fetch(url, {
       method: 'GET',
       headers: {
-        'User-Agent': userAgent,
+        'User-Agent': 'Android/13/Redmi Note 8/6.51.0',
+        'x-api-key': '123f4c4e-6ce1-404d-8786-d17e46d65b5c',
       },
     });
     if (!response.ok) {
