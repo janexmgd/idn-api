@@ -37,6 +37,7 @@ server.get('/stream-live', async (req, res) => {
       },
     });
     if (!response.ok) {
+      console.log(response);
       return res.status(500).json({ message: 'failed get stream' });
     }
     const buffer = Buffer.from(await response.arrayBuffer());
